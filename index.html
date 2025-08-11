@@ -1,46 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Digital Store</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
 
-  <body>
-    <div class="container">
-      <div class="container-content1">
-        <div>
-          <img src="logo.png" alt="" />
-          <div class="search">
-            <input
-              type="search"
-              name="search"
-              id="search"
-              placeholder="Pesquisar produtos..."
-            />
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </div>
-          <a href="http://">Cadastre-se </a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="container-content1">
+                <div>
+                    <img src="logo.png" alt="">
+                    <div class="search">
+                        <input type="search" name="search" id="search" placeholder="Pesquisar produtos...">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div>
+                        <a href="http://">Cadastre-se</a>
+                    </div>
+                </div>
+                <div>
+                    <nav>
+                        <a href="">Home</a>
+                        <a href="">Produtos</a>
+                        <a href="">Categorias</a>
+                        <a href="">Meus Pedidos</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="container-content2">
+                <button type="button">Entrar</button>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+
         </div>
-        <nav>
-          <a href="">Home </a>
-          <a href="">Produtoss</a>
-          <a href="">Categorias</a>
-          <a href="">Meus Pedidos</a>
-        </nav>
-      </div>
-      <div class="container-content2">
-        <button type="button">Entrar</button>
-        <i class="fa-solid fa-cart-shopping"></i>
-      </div>
-    </div>
-  </body>
+        <section class="container-section">
+            <img src="circulo_bolinhas.png" alt="">
+
+            <div class="content-section">
+
+                <div class="content-section-text">
+                    <h2>Melhores ofertas personalizadas</h2>
+                    <h1>Queima de estoque Nike</h1>
+                    <p>A falha resultante enfraquece o exercício, a menos que a execurção seja dada ao tempo de
+                        trabalho, e
+                        assim a
+                        ação é prosseguida.</p>
+                    <button type="button">Ver Ofertas</button>
+                </div>
+
+
+            </div>
+
+            <div class="carrossel" id="bolinha">
+                <div class="carrossel-bolinha" id="bolinha-um"></div>
+                <div class="carrossel-bolinha"></div>
+                <div class="carrossel-bolinha"></div>
+                <div class="carrossel-bolinha"></div>
+            </div>
+
+        </section>
+        <section class="section-colecao">
+            <div class="container-section-conteudo">
+                <h2>Coleções em destaque</h2>
+                <div class="section-colecao-conteudo">
+
+                    <div class="section-colecao-quandro"></div>
+                    <div class="section-colecao-quandro"></div>
+                    <div class="section-colecao-quandro"></div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+</body>
+
 </html>
