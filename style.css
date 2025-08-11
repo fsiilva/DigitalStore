@@ -245,6 +245,7 @@
     background-color: #D8E3F2;
     width: 405px;
     height: 251px;
+    border-radius: 5px;
 }
 .section-colecao-conteudo {
     width: 100%;
@@ -265,5 +266,5 @@
 .container-section-conteudo h2 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 24px;
-    color: #c82070;
+    color:#474747;
 }
