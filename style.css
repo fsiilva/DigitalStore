@@ -5,7 +5,10 @@
 }
 
 .body {
-    background-color: #000000;
+    
+}
+.main {
+    background-color: #275392;
 }
 
 .container {
@@ -381,6 +384,10 @@
     font-weight: bold;
     margin-bottom: 40px;
 }
+.container-produtos-alta {
+    background-color: #f9f8fe;
+    padding: 20px;
+}
 
 .titulo-produto {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -415,10 +422,11 @@
 .produto {
     width: 292px;
     height: 321px;
-    background-color: rgb(255, 249, 249);
+    background-color: rgb(255, 255, 255);
     border-radius: 4px;
     background-image: url("tenis-produto.png");
     background-repeat: no-repeat;
+    padding: 20px;
     
     background-position-x: -20px;
 }
@@ -428,7 +436,7 @@
     justify-content: space-between;
     margin-right: 150px;
     margin-left: 150px;
-    margin-bottom: 50px;
+    
     height: 439px;
     color: #c82070;
 }
