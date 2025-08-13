@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style-type: none;
 }
 
 .body {
@@ -482,4 +483,193 @@
 
 #preco-por {
     font-weight: bold;
+}
+.oferta-especial {
+    width: 1440px;
+    height: 470px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.ofertas-imagem {
+  position: relative; /* Cria o contexto de posicionamento */
+  width: 600px; /* Largura do contêiner */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  
+}
+.ofertas-texto {
+    width: 60%;
+}
+
+.imagem-circulo {
+    width: 380px;
+    height: 380px;
+    background: linear-gradient(to top, #ffffff, #ffffff, #4200FF80);
+
+    border-radius: 50%;
+    
+}
+.ofertas-imagem img {
+    position: absolute; /* Posicionamento absoluto em relação ao .container */
+    z-index: 1; /* Garante que a imagem fique por cima */
+    width: 500px;
+    margin-bottom: 0;
+    
+}
+
+.ofertas-texto {
+    width: 500px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.ofertas-texto h2 {
+    font-size: 14px;
+    font-weight: 200;
+    color: #C92071;
+}
+.ofertas-texto h1 {
+    color: #474747;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.ofertas-texto p{
+    font-size: 16px;
+    color: #474747;
+    font-weight: 200;
+    text-justify: auto;
+}
+
+.ofertas-texto button {
+    width: 30%;
+     background-color: #c82070;
+    /* Azul vibrante (pode ser ajustado) */
+    color: #ffffff;
+    /* Texto branco para alto contraste */
+    border: none;
+    border-radius: 10px;
+    /* Bordas levemente arredondadas */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Fonte moderna e legível */
+    font-size: 16px;
+    font-weight: 600;
+    /* Negrito para destacar o texto */
+    padding: 10px 20px;
+    cursor: pointer;
+    /* Muda o cursor para indicar que é clicável */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.oferta-especial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 100px;
+    gap: 20px;
+}
+
+footer {
+    background-color: #1F1F1F;
+    width: 100%;
+    height: 554px;
+}
+.container-logo {
+    color: white;
+    width: 55%;
+    height: 100%;
+    padding: 0 50px 50px 50px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-top: 0;
+}
+.container-logo img{
+    width: 300px;
+    
+    
+    
+}
+.list-info {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    
+}
+
+.list-info h1 {
+    font-size: 16px;
+    font-weight: 400;
+}
+.list-categorias {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.list-categorias h1 {
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.contato {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.contato h1 {
+    font-size: 16px;
+    font-weight: 400;
+}
+.container-footer {
+    
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 100px;
+    gap: 100px;
+    border-bottom: 1px solid white;
+}
+
+footer p{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 10px;
+}
+
+.container-logo p{
+    text-align: left;
+}
+.contato p{
+    text-align: left;
+}
+
+.redes-sociais {
+    width: 400px;
+}
+
+footer hr {
+    width: 90%;
+    
+}
+#logo {
+    color: white;
 }
