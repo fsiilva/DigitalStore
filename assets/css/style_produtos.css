@@ -10,7 +10,7 @@
   --color-accent: #e7ff86;
   --color-background: #ffffff;
   --color-light-gray: #f9f8fe;
-  --color-yelow-subtitle: #F6AA1C;
+  --color-yelow-subtitle: #f6aa1c;
 
   --font-family-base: "Inter", "Segoe UI", sans-serif;
 
@@ -25,7 +25,15 @@
   box-sizing: border-box;
   font-family: var(--font-family-base);
 }
+main {
+  background-color: var(--color-light-gray);
+}
 
+.container_produtos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -200,7 +208,6 @@ ul {
   flex-direction: column;
   align-items: center;
   gap: 15px;
-
 }
 
 .main-nav a {
@@ -216,7 +223,6 @@ ul {
   background-color: var(--color-secondary);
   padding: var(--spacing-lg) 0;
   text-align: center;
-  
 }
 .content-hero-produto {
   display: flex;
@@ -224,13 +230,36 @@ ul {
   align-items: center;
   padding: 20px;
 }
-.filtro{
+
+.filtro {
+  width: 250px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+.filtro h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.filtro hr {
+  margin: 10px 0 20px;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+.filtro h4 {
+  font-size: 16px;
+  margin: 15px 0 8px;
+}
+.filtro label {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  gap: 10px;
-  
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+.filtro input[type="checkbox"],
+.filtro input[type="radio"] {
+  margin-right: 10px;
+  accent-color: #d62479; /* cor rosa */
 }
 
 .quadro-ordenar {
@@ -242,7 +271,7 @@ ul {
   border: 1px solid black;
   padding: 20px;
 }
-.content-hero-produto{
+.content-hero-produto {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -283,7 +312,14 @@ ul {
 .featured-collections,
 .highlighted-categories,
 .trending-products {
-  padding: var(--spacing-lg) 0;
+  padding: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  width: 80%;
 }
 
 .featured-collections__grid {
@@ -302,7 +338,7 @@ ul {
   color: var(--color-text);
   background-size: cover;
   background-position: center;
-  background-color: #D8E3F2;
+  background-color: #d8e3f2;
 }
 
 .collection-card__content {
@@ -473,11 +509,14 @@ ul {
   width: 350px;
   height: 350px;
   border-radius: 50%;
-  background: linear-gradient(to bottom, rgba(0, 123, 255, 0.2), rgba(255, 255, 255, 0));
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 123, 255, 0.2),
+    rgba(255, 255, 255, 0)
+  );
   /* azul */
   z-index: 1;
   /* fica atrás */
-
 }
 
 .container_teniz-circulo {
@@ -500,7 +539,6 @@ ul {
   height: auto;
   z-index: 2;
   /* fica na frente */
-
 }
 
 .special-offer__text {

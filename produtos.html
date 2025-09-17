@@ -12,9 +12,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
 
-  <body>
+  <body class="flex flex-col justify-center bg-[#f9f8fe]">
     <header class="header">
       <div class="container header__container">
         <a href="#" class="header__logo">
@@ -58,11 +65,9 @@
         </div>
       </nav>
     </header>
-
-    <main>
-      <div class="content-hero-produto">
-        <div class="filtro">
-          <h2>Resultados para “Tênis”</h2>
+     <div class="flex justify-between items-center mr-[140px] ml-[90px] bg-[#f9f8fe] p-5">
+        <div class="flex ">
+          <h2 class="font-bold">Resultados para “Tênis”</h2>
           <p>- 389 produtos</p>
         </div>
         <div class="quadro-ordenar">
@@ -70,176 +75,332 @@
           <img src="assets/img/seta_baixo.png" alt="" />
         </div>
       </div>
-
-      <section class="trending-products">
-        <div class="container-filtrarPor"></div>
-        <div class="container">
-          <header class="section-header">
-            <h2 class="section-title">Produtos em Alta</h2>
-            <a href="#">Ver todos <i class="fa-solid fa-arrow-right"></i></a>
-          </header>
-          <div class="products-grid">
-            <article class="product-card">
-              <div class="product-card__image">
-                <span class="discount-badge">30% OFF</span>
-                <img
-                  src="assets/img/tenis-produto.png"
-                  alt="Tênis K-Swiss V8 Masculino"
+    <main class="flex flex-col">
+     
+      <section class="flex justify-center  h-full">
+        <div class="bg-white w-[20%] h-[700px] rounded-lg g-5 m-5" id="filtro">
+          <div class="">
+            <h3 class="text-sm font-medium text-gray-700 mb-2 m-5">Marka</h3>
+            <div class="flex flex-col space-y-2 text-sm text-gray-600 m-5">
+              <label class="flex items-center space-x-2">
+                <input
+                  type="checkbox"
+                  checked
+                  class="accent-pink-600 w-4 h-4"
                 />
-              </div>
-              <div class="product-card__info">
-                <span class="product-card__category">Tênis</span>
-                <h3 class="product-card__name">K-Swiss V8 - Masculino</h3>
-                <div class="product-card__price">
-                  <span class="price--striked">$200</span>
-                  <span class="price--current">$100</span>
-                </div>
-              </div>
-            </article>
-            <article class="product-card">
-              <div class="product-card__image">
-                <span class="discount-badge">30% OFF</span>
-                <img
-                  src="assets/img/tenis-produto.png"
-                  alt="Tênis K-Swiss V8 Masculino"
+                <span>Adiddas</span>
+              </label>
+              <label class="flex items-center space-x-2 g-5">
+                <input type="checkbox" class="accent-pink-600 w-4 h-4" />
+                <span>Calenciaga</span>
+              </label>
+              <label class="flex items-center space-x-2">
+                <input
+                  type="checkbox"
+                  checked
+                  class="accent-pink-600 w-4 h-4"
                 />
-              </div>
-              <div class="product-card__info">
-                <span class="product-card__category">Tênis</span>
-                <h3 class="product-card__name">K-Swiss V8 - Masculino</h3>
-                <div class="product-card__price">
-                  <span class="price--striked">$200</span>
-                  <span class="price--current">$100</span>
-                </div>
-              </div>
-            </article>
-            <article class="product-card">
-              <div class="product-card__image">
-                <img
-                  src="assets/img/tenis-produto.png"
-                  alt="Tênis K-Swiss V8 Masculino"
-                />
-              </div>
-              <div class="product-card__info">
-                <span class="product-card__category">Tênis</span>
-                <h3 class="product-card__name">K-Swiss V8 - Masculino</h3>
-                <div class="product-card__price">
-                  <span class="price--current">$150</span>
-                </div>
-              </div>
-            </article>
-            <article class="product-card">
-              <div class="product-card__image">
-                <span class="discount-badge">30% OFF</span>
-                <img
-                  src="assets/img/tenis-produto.png"
-                  alt="Tênis K-Swiss V8 Masculino"
-                />
-              </div>
-              <div class="product-card__info">
-                <span class="product-card__category">Tênis</span>
-                <h3 class="product-card__name">K-Swiss V8 - Masculino</h3>
-                <div class="product-card__price">
-                  <span class="price--striked">$200</span>
-                  <span class="price--current">$100</span>
-                </div>
-              </div>
-            </article>
-            <article class="product-card">
-              <div class="product-card__image">
-                <span class="discount-badge">30% OFF</span>
-                <img
-                  src="assets/img/tenis-produto.png"
-                  alt="Tênis K-Swiss V8 Masculino"
-                />
-              </div>
-              <div class="product-card__info">
-                <span class="product-card__category">Tênis</span>
-                <h3 class="product-card__name">K-Swiss V8 - Masculino</h3>
-                <div class="product-card__price">
-                  <span class="price--striked">$200</span>
-                  <span class="price--current">$100</span>
-                </div>
-              </div>
-            </article>
-            <article class="product-card">
-              <div class="product-card__image">
-                <span class="discount-badge">30% OFF</span>
-                <img
-                  src="assets/img/tenis-produto.png"
-                  alt="Tênis K-Swiss V8 Masculino"
-                />
-              </div>
-              <div class="product-card__info">
-                <span class="product-card__category">Tênis</span>
-                <h3 class="product-card__name">K-Swiss V8 - Masculino</h3>
-                <div class="product-card__price">
-                  <span class="price--striked">$200</span>
-                  <span class="price--current">$100</span>
-                </div>
-              </div>
-            </article>
-            <article class="product-card">
-              <div class="product-card__image">
-                <img
-                  src="assets/img/tenis-produto.png"
-                  alt="Tênis K-Swiss V8 Masculino"
-                />
-              </div>
-              <div class="product-card__info">
-                <span class="product-card__category">Tênis</span>
-                <h3 class="product-card__name">K-Swiss V8 - Masculino</h3>
-                <div class="product-card__price">
-                  <span class="price--current">$150</span>
-                </div>
-              </div>
-            </article>
-            <article class="product-card">
-              <div class="product-card__image">
-                <span class="discount-badge">30% OFF</span>
-                <img
-                  src="assets/img/tenis-produto.png"
-                  alt="Tênis K-Swiss V8 Masculino"
-                />
-              </div>
-              <div class="product-card__info">
-                <span class="product-card__category">Tênis</span>
-                <h3 class="product-card__name">K-Swiss V8 - Masculino</h3>
-                <div class="product-card__price">
-                  <span class="price--striked">$200</span>
-                  <span class="price--current">$100</span>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="special-offer">
-        <div class="container special-offer__container">
-          <div class="container_teniz-circulo">
-            <div id="circulo-azul"></div>
-            <div class="special-offer__image">
-              <img
-                src="assets/img/tenis_especial.png"
-                alt="Tênis Air Jordan Edição de Colecionador"
-              />
+                <span>K-Swiss</span>
+              </label>
+              <label class="flex items-center space-x-2">
+                <input type="checkbox" class="accent-pink-600 w-4 h-4" />
+                <span>Nike</span>
+              </label>
+              <label class="flex items-center space-x-2">
+                <input type="checkbox" class="accent-pink-600 w-4 h-4" />
+                <span>Puma</span>
+              </label>
             </div>
           </div>
 
-          <div class="special-offer__text">
-            <p class="special-offer__subtitle">Oferta especial</p>
-            <h2 class="special-offer__title">
-              Air Jordan edição de colecionador
-            </h2>
-            <p class="special-offer__description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip.
-            </p>
-            <a href="#" class="btn btn--secondary">Ver Oferta</a>
+          <!-- Categoria -->
+          <div class="mb-5">
+            <h3 class="text-sm font-medium text-gray-700 mb-8 m-5">
+              Categoria
+            </h3>
+            <div class="flex flex-col space-y-2 text-sm text-gray-600 m-5">
+              <label class="flex items-center space-x-2">
+                <input
+                  type="checkbox"
+                  checked
+                  class="accent-pink-600 w-4 h-4"
+                />
+                <span>Esporte e lazer</span>
+              </label>
+              <label class="flex items-center space-x-2">
+                <input type="checkbox" class="accent-pink-600 w-4 h-4" />
+                <span>Casual</span>
+              </label>
+              <label class="flex items-center space-x-2">
+                <input type="checkbox" class="accent-pink-600 w-4 h-4" />
+                <span>Utilitário</span>
+              </label>
+              <label class="flex items-center space-x-2">
+                <input type="checkbox" class="accent-pink-600 w-4 h-4" />
+                <span>Corrida</span>
+              </label>
+            </div>
           </div>
+
+          <!-- Gênero -->
+          <div class="mb-5">
+            <h3 class="text-sm font-medium text-gray-700 mb-8 m-5">Gênero</h3>
+            <div class="flex flex-col space-y-2 text-sm text-gray-600 m-5">
+              <label class="flex items-center space-x-2">
+                <input
+                  type="checkbox"
+                  checked
+                  class="accent-pink-600 w-4 h-4"
+                />
+                <span>Masculino</span>
+              </label>
+              <label class="flex items-center space-x-2">
+                <input
+                  type="checkbox"
+                  checked
+                  class="accent-pink-600 w-4 h-4"
+                />
+                <span>Feminino</span>
+              </label>
+              <label class="flex items-center space-x-2">
+                <input type="checkbox" class="accent-pink-600 w-4 h-4" />
+                <span>Unisex</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Estado -->
+          <div>
+            <h3 class="text-sm font-medium text-gray-700 mb-2 m-5">Estado</h3>
+            <div class="flex flex-col space-y-2 text-sm text-gray-600 m-5">
+              <label class="flex items-center space-x-2">
+                <input
+                  type="radio"
+                  name="estado"
+                  checked
+                  class="accent-pink-600 w-4 h-4"
+                />
+                <span>Novo</span>
+              </label>
+              <label class="flex items-center space-x-2">
+                <input
+                  type="radio"
+                  name="estado"
+                  class="accent-pink-600 w-4 h-4"
+                />
+                <span>Usado</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        
+        <div class="flex flex-wrap w-[70%] justify-center g-5 mb-8">
+         
+          
+          <article class="product-card m-5"">
+            <div class="product-card__image">
+              <span class="discount-badge">30% OFF</span>
+              <img
+                src="assets/img/tenis-produto.png"
+                alt="Tênis K-Swiss V8 Masculino"
+              />
+            </div>
+            <div class="product-card__info">
+              <span class="product-card__category">Tênis</span>
+              <h3 class="product-card__name">K-Swiss V8 - Masculino</h3>
+              <div class="product-card__price">
+                <span class="price--striked">$200</span>
+                <span class="price--current">$100</span>
+              </div>
+            </div>
+          </article>
+          <article class="product-card m-5">
+            <div class="product-card__image">
+              <span class="discount-badge">30% OFF</span>
+              <img
+                src="assets/img/tenis-produto.png"
+                alt="Tênis K-Swiss V8 Masculino"
+              />
+            </div>
+            <div class="product-card__info">
+              <span class="product-card__category">Tênis</span>
+              <h3 class="product-card__name">K-Swiss V8 - Masculino</h3>
+              <div class="product-card__price">
+                <span class="price--striked">$200</span>
+                <span class="price--current">$100</span>
+              </div>
+            </div>
+          </article>
+          <article class="product-card m-5">
+            <div class="product-card__image">
+              <span class="discount-badge">30% OFF</span>
+              <img
+                src="assets/img/tenis-produto.png"
+                alt="Tênis K-Swiss V8 Masculino"
+              />
+            </div>
+            <div class="product-card__info">
+              <span class="product-card__category">Tênis</span>
+              <h3 class="product-card__name">K-Swiss V8 - Masculino</h3>
+              <div class="product-card__price">
+                <span class="price--striked">$200</span>
+                <span class="price--current">$100</span>
+              </div>
+            </div>
+          </article>
+          <article class="product-card m-5">
+            <div class="product-card__image">
+              <span class="discount-badge">30% OFF</span>
+              <img
+                src="assets/img/tenis-produto.png"
+                alt="Tênis K-Swiss V8 Masculino"
+              />
+            </div>
+            <div class="product-card__info">
+              <span class="product-card__category">Tênis</span>
+              <h3 class="product-card__name">K-Swiss V8 - Masculino</h3>
+              <div class="product-card__price">
+                <span class="price--striked">$200</span>
+                <span class="price--current">$100</span>
+              </div>
+            </div>
+          </article>
+          <article class="product-card m-5">
+            <div class="product-card__image">
+              <span class="discount-badge">30% OFF</span>
+              <img
+                src="assets/img/tenis-produto.png"
+                alt="Tênis K-Swiss V8 Masculino"
+              />
+            </div>
+            <div class="product-card__info">
+              <span class="product-card__category">Tênis</span>
+              <h3 class="product-card__name">K-Swiss V8 - Masculino</h3>
+              <div class="product-card__price">
+                <span class="price--striked">$200</span>
+                <span class="price--current">$100</span>
+              </div>
+            </div>
+          </article>
+          <article class="product-card m-5">
+            <div class="product-card__image">
+              <span class="discount-badge">30% OFF</span>
+              <img
+                src="assets/img/tenis-produto.png"
+                alt="Tênis K-Swiss V8 Masculino"
+              />
+            </div>
+            <div class="product-card__info">
+              <span class="product-card__category">Tênis</span>
+              <h3 class="product-card__name">K-Swiss V8 - Masculino</h3>
+              <div class="product-card__price">
+                <span class="price--striked">$200</span>
+                <span class="price--current">$100</span>
+              </div>
+            </div>
+          </article>
+          <article class="product-card m-5">
+            <div class="product-card__image">
+              <span class="discount-badge">30% OFF</span>
+              <img
+                src="assets/img/tenis-produto.png"
+                alt="Tênis K-Swiss V8 Masculino"
+              />
+            </div>
+            <div class="product-card__info">
+              <span class="product-card__category">Tênis</span>
+              <h3 class="product-card__name">K-Swiss V8 - Masculino</h3>
+              <div class="product-card__price">
+                <span class="price--striked">$200</span>
+                <span class="price--current">$100</span>
+              </div>
+            </div>
+          </article>
+          <article class="product-card m-5">
+            <div class="product-card__image">
+              <span class="discount-badge">30% OFF</span>
+              <img
+                src="assets/img/tenis-produto.png"
+                alt="Tênis K-Swiss V8 Masculino"
+              />
+            </div>
+            <div class="product-card__info">
+              <span class="product-card__category">Tênis</span>
+              <h3 class="product-card__name">K-Swiss V8 - Masculino</h3>
+              <div class="product-card__price">
+                <span class="price--striked">$200</span>
+                <span class="price--current">$100</span>
+              </div>
+            </div>
+          </article>
+          <article class="product-card m-5">
+            <div class="product-card__image">
+              <span class="discount-badge">30% OFF</span>
+              <img
+                src="assets/img/tenis-produto.png"
+                alt="Tênis K-Swiss V8 Masculino"
+              />
+            </div>
+            <div class="product-card__info">
+              <span class="product-card__category">Tênis</span>
+              <h3 class="product-card__name">K-Swiss V8 - Masculino</h3>
+              <div class="product-card__price">
+                <span class="price--striked">$200</span>
+                <span class="price--current">$100</span>
+              </div>
+            </div>
+          </article>
+          <article class="product-card m-5">
+            <div class="product-card__image">
+              <span class="discount-badge">30% OFF</span>
+              <img
+                src="assets/img/tenis-produto.png"
+                alt="Tênis K-Swiss V8 Masculino"
+              />
+            </div>
+            <div class="product-card__info">
+              <span class="product-card__category">Tênis</span>
+              <h3 class="product-card__name">K-Swiss V8 - Masculino</h3>
+              <div class="product-card__price">
+                <span class="price--striked">$200</span>
+                <span class="price--current">$100</span>
+              </div>
+            </div>
+          </article>
+          <article class="product-card m-5">
+            <div class="product-card__image">
+              <span class="discount-badge">30% OFF</span>
+              <img
+                src="assets/img/tenis-produto.png"
+                alt="Tênis K-Swiss V8 Masculino"
+              />
+            </div>
+            <div class="product-card__info">
+              <span class="product-card__category">Tênis</span>
+              <h3 class="product-card__name">K-Swiss V8 - Masculino</h3>
+              <div class="product-card__price">
+                <span class="price--striked">$200</span>
+                <span class="price--current">$100</span>
+              </div>
+            </div>
+          </article>
+          <article class="product-card m-5">
+            <div class="product-card__image">
+              <span class="discount-badge">30% OFF</span>
+              <img
+                src="assets/img/tenis-produto.png"
+                alt="Tênis K-Swiss V8 Masculino"
+              />
+            </div>
+            <div class="product-card__info">
+              <span class="product-card__category">Tênis</span>
+              <h3 class="product-card__name">K-Swiss V8 - Masculino</h3>
+              <div class="product-card__price">
+                <span class="price--striked">$200</span>
+                <span class="price--current">$100</span>
+              </div>
+            </div>
+          </article>
         </div>
       </section>
     </main>
@@ -305,5 +466,6 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.tailwindcss.com"></script>
   </body>
 </html>
